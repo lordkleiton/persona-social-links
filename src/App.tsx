@@ -1,25 +1,18 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Card from "./components/Card";
 
 function App() {
+  const url =
+    "https://sites.google.com/site/persona3fessociallink/_/rsrc/1398700674440/about-me/aaaaaaaaaaaaaa.jpg?height=200&width=182";
+  const name = "Nome Sobrenome";
+  const arcana = "Arcana";
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Card imagePath={url} name={name} arcana={arcana} />
+      <Card imagePath={url} name={name} arcana={arcana} />
+      <Card imagePath={url} name={name} arcana={arcana} />
+      <Card imagePath={url} name={name} arcana={arcana} />
+    </>
   );
 }
 
