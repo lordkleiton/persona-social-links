@@ -4,7 +4,7 @@ import links from "./links";
 
 const bunkichi_mitsuko = new CharacterData(
   Arcanas.hierophant,
-  "Bunkichi and Mitsuko",
+  "Bunkichi & Mitsuko",
   [],
   [],
   links
