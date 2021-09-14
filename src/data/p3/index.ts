@@ -1,3 +1,4 @@
+import bebe from "./bebe";
 import bunkichi_mitsuko from "./bunkichi_mitsuko";
 import chihiro from "./chihiro";
 import fuuka from "./fuuka";
@@ -6,15 +7,19 @@ import kazuchi from "./kazushi";
 import keisuke from "./keisuke";
 import kenji from "./kenji";
 import maiko from "./maiko";
+import mamoru from "./mamoru";
 import maya from "./maya";
 import mitsuru from "./mitsuru";
+import mutatsu from "./mutatsu";
 import pharos from "./pharos";
 import SEES from "./sees";
+import tanaka from "./tanaka";
 import yukari from "./yukari";
 import yuko from "./yuko";
 
 const exportData = {
   bunkichi_mitsuko,
+  bebe,
   chihiro,
   fuuka,
   hidetoshi,
@@ -22,10 +27,13 @@ const exportData = {
   keisuke,
   kenji,
   maiko,
+  mamoru,
   maya,
   mitsuru,
+  mutatsu,
   pharos,
   SEES,
+  tanaka,
   yukari,
   yuko,
 };
