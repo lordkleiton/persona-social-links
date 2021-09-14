@@ -36,4 +36,7 @@ export const InfoArea = styled.div`
 
 export const Text = styled.p`
   text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 `;
