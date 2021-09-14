@@ -1,3 +1,6 @@
+import kenji from "./kenji";
 import SEES from "./sees";
 
-export { SEES };
+const exportData = { SEES, kenji };
+
+export default exportData;
