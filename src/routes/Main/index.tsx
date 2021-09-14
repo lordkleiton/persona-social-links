@@ -13,7 +13,7 @@ const Main: React.FC = () => {
     <Background>
       {p3.map((link) => (
         <Card
-          imagePath={url}
+          imagePath={link.image}
           name={link.name}
           arcana={link.arcana}
           key={`${link.arcana}-${link.name}`}

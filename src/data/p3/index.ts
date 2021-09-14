@@ -5,7 +5,7 @@ import bunkichi_mitsuko from "./bunkichi_mitsuko";
 import chihiro from "./chihiro";
 import fuuka from "./fuuka";
 import hidetoshi from "./hidetoshi";
-import kazuchi from "./kazushi";
+import kazushi from "./kazushi";
 import keisuke from "./keisuke";
 import kenji from "./kenji";
 import maiko from "./maiko";
@@ -29,7 +29,7 @@ const exportData = {
   chihiro,
   fuuka,
   hidetoshi,
-  kazuchi,
+  kazuchi: kazushi,
   keisuke,
   kenji,
   maiko,

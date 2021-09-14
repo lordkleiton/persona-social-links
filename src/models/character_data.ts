@@ -11,18 +11,21 @@ export class CharacterData implements CharacterInfo {
   readonly link_levels: LinkLevels;
   readonly arcana: Arcanas;
   readonly name: string;
+  readonly image: string;
 
   constructor(
     arcana: Arcanas = Arcanas.aeon,
     name: string = "Empty",
     unlock_conditions: string[] = baseArray,
     weekly_availability: string[] = baseArray,
-    link_levels: LinkLevels = new CharacterLinks()
+    link_levels: LinkLevels = new CharacterLinks(),
+    image: string = ""
   ) {
     this.unlock_conditions = unlock_conditions;
     this.weekly_availability = weekly_availability;
     this.link_levels = link_levels;
     this.arcana = arcana;
     this.name = name;
+    this.image = image;
   }
 }
