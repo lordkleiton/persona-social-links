@@ -5,7 +5,8 @@ export const BaseCard = styled.div`
   border: double;
   border-radius: 0.5rem;
   flex-direction: column;
-  max-width: 90%;
+  width: 90%;
+  max-width: 900px;
   margin: 1rem auto;
 
   @media (max-width: 480px) {
