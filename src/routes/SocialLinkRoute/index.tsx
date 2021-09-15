@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useHistory, useRouteMatch } from "react-router-dom";
-import { arcanasArray, tryGetArcanaKeyByValue } from "../../utils/arcanas";
+import { arcanasArray } from "../../utils/arcanas";
 import p3data from "../../data/p3";
 import { BaseCard, Image, InnerCard, TitleWrapper } from "./styles";
 import { Games } from "../../enums/games";
