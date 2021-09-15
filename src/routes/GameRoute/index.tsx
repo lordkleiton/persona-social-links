@@ -21,21 +21,14 @@ const GameRoute: React.FC = () => {
   const history = useHistory();
   const match = useRouteMatch();
   const hasMatch = Object.values(availableGames).includes(match.url);
-  const redirect = !match.isExact || !hasMatch;
+  const gameData = dataMap[match.url];
+  const redirect = !match.isExact || !hasMatch || !gameData;
 
   useEffect(() => {
     if (redirect) history.push("/");
   }, [history, hasMatch]);
 
   if (redirect) return null;
-
-  const gameData = dataMap[match.url];
-
-  useEffect(() => {
-    if (!gameData) history.push("/");
-  }, [history, hasMatch]);
-
-  if (!gameData) return null;
 
   const data = Object.values(gameData);
 
