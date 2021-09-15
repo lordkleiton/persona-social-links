@@ -1,5 +1,5 @@
-import React from "react";
-import { useRouteMatch } from "react-router-dom";
+import React, { useEffect } from "react";
+import { useHistory, useRouteMatch } from "react-router-dom";
 import { arcanasArray } from "../../utils/arcanas";
 import p3data from "../../data/p3";
 
@@ -19,6 +19,7 @@ const dataMap = {
 };
 
 const SocialLinkRoute: React.FC = () => {
+  const history = useHistory();
   const match = useRouteMatch();
   const params = match.params as PathProps;
   const gameData = dataMap[params.game];
@@ -26,11 +27,26 @@ const SocialLinkRoute: React.FC = () => {
   const data = Object.values(gameData);
   const currentArcana = arcanas.find((arcana) => arcana.key === params.arcana);
   const currentLink = data.find((d) => d.arcana === currentArcana?.value);
+  const redirect = !gameData || !currentArcana || !currentLink;
 
-  console.log(currentArcana);
+  useEffect(() => {
+    if (redirect) history.push(`/${params.game}`);
+  }, [history, redirect]);
+
+  if (redirect) return null;
+
   console.log(currentLink);
 
-  return null;
+  return (
+    <>
+      <p>{currentLink.arcana.toString()}</p>
+      <p>{currentLink.image.toString()}</p>
+      <p>{currentLink.link_levels.toString()}</p>
+      <p>{currentLink.name.toString()}</p>
+      <p>{currentLink.unlock_conditions.toString()}</p>
+      <p>{currentLink.unlock_conditions.toString()}</p>
+    </>
+  );
 };
 
 export default SocialLinkRoute;
