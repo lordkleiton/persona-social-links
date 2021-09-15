@@ -18,7 +18,7 @@ const SocialLinkRoute: React.FC = () => {
   const history = useHistory();
   const match = useRouteMatch();
   const params = match.params as PathProps;
-  const gameData = dataMap[params.game];
+  const gameData = dataMap[params.game] || {};
   const arcanas = arcanasArray();
   const data = Object.values(gameData);
   const currentArcana = arcanas.find((arcana) => arcana.key === params.arcana);
