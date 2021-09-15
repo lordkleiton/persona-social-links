@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useHistory, useRouteMatch } from "react-router-dom";
-import { arcanasArray } from "../../utils/arcanas";
+import { arcanasArray, tryGetArcanaKeyByValue } from "../../utils/arcanas";
 import p3data from "../../data/p3";
 import { BaseCard, Image, InnerCard, TitleWrapper } from "./styles";
 import { Games } from "../../enums/games";
@@ -24,6 +24,10 @@ const SocialLinkRoute: React.FC = () => {
   const currentArcana = arcanas.find((arcana) => arcana.key === params.arcana);
   const currentLink = data.find((d) => d.arcana === currentArcana?.value);
   const redirect = !gameData || !currentArcana || !currentLink;
+
+  const teste = tryGetArcanaKeyByValue("Hanged Man");
+
+  console.log(teste);
 
   useEffect(() => {
     if (redirect) history.push(`/${params.game}`);

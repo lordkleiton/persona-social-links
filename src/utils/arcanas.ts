@@ -1,4 +1,5 @@
 import { Arcanas } from "../enums/arcanas";
+import { capitalize } from "./misc";
 
 interface IArcanaItem {
   readonly key: string;
@@ -17,4 +18,22 @@ export const arcanasArray = () => {
   }
 
   return result;
+};
+
+export const tryGetArcanaKeyByValue = (value: string) => {
+  const parts = value.split(" ");
+  const newParts = [parts[0].toLocaleLowerCase()];
+
+  if (parts.length > 1) {
+    const auxParts = parts
+      .slice(1, parts.length)
+      .map((part) => capitalize(part));
+
+    newParts.push(...auxParts);
+  }
+
+  const newStr = newParts.reduce((acc, curr) => acc + curr, "");
+  const hasArcana = !!Arcanas[newStr];
+
+  return hasArcana ? newStr : null;
 };
