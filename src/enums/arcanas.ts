@@ -21,4 +21,5 @@ export enum Arcanas {
   sun = "Sun",
   judgement = "Judgement",
   aeon = "Aeon",
+  world = "World",
 }
