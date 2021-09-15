@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Background, ImageArea, InfoArea, Text, Image } from "./styles";
 
 interface CardProps {
@@ -8,8 +9,6 @@ interface CardProps {
 }
 
 const Card: React.FC<CardProps> = (props) => {
-  console.log(props);
-
   return (
     <Background>
       <ImageArea>

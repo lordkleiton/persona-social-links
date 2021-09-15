@@ -31,7 +31,7 @@ const SocialLinkRoute: React.FC = () => {
 
   useEffect(() => {
     if (redirect) history.push(`/${params.game}`);
-  }, [history, redirect]);
+  }, [history, redirect, params.game]);
 
   if (redirect) return null;
 
