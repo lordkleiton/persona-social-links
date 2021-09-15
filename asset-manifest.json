@@ -1,0 +1,43 @@
+{
+  "files": {
+    "main.css": "/persona-social-links/static/css/main.4d648769.chunk.css",
+    "main.js": "/persona-social-links/static/js/main.ae69e7a8.chunk.js",
+    "main.js.map": "/persona-social-links/static/js/main.ae69e7a8.chunk.js.map",
+    "runtime-main.js": "/persona-social-links/static/js/runtime-main.9025566a.js",
+    "runtime-main.js.map": "/persona-social-links/static/js/runtime-main.9025566a.js.map",
+    "static/js/2.59f2fe99.chunk.js": "/persona-social-links/static/js/2.59f2fe99.chunk.js",
+    "static/js/2.59f2fe99.chunk.js.map": "/persona-social-links/static/js/2.59f2fe99.chunk.js.map",
+    "static/js/3.d6b29ce8.chunk.js": "/persona-social-links/static/js/3.d6b29ce8.chunk.js",
+    "static/js/3.d6b29ce8.chunk.js.map": "/persona-social-links/static/js/3.d6b29ce8.chunk.js.map",
+    "index.html": "/persona-social-links/index.html",
+    "static/css/main.4d648769.chunk.css.map": "/persona-social-links/static/css/main.4d648769.chunk.css.map",
+    "static/js/2.59f2fe99.chunk.js.LICENSE.txt": "/persona-social-links/static/js/2.59f2fe99.chunk.js.LICENSE.txt",
+    "static/media/aigis.6e182c67.webp": "/persona-social-links/static/media/aigis.6e182c67.webp",
+    "static/media/akinari.c915031a.webp": "/persona-social-links/static/media/akinari.c915031a.webp",
+    "static/media/bebe.7190dd43.webp": "/persona-social-links/static/media/bebe.7190dd43.webp",
+    "static/media/bunkichi_mitsuko.87a2bdb3.webp": "/persona-social-links/static/media/bunkichi_mitsuko.87a2bdb3.webp",
+    "static/media/chihiro.8924c3c9.webp": "/persona-social-links/static/media/chihiro.8924c3c9.webp",
+    "static/media/fuuka.59ca363d.webp": "/persona-social-links/static/media/fuuka.59ca363d.webp",
+    "static/media/hidetoshi.1deb7c02.webp": "/persona-social-links/static/media/hidetoshi.1deb7c02.webp",
+    "static/media/kazushi.9b544986.webp": "/persona-social-links/static/media/kazushi.9b544986.webp",
+    "static/media/keisuke.685e9eee.webp": "/persona-social-links/static/media/keisuke.685e9eee.webp",
+    "static/media/kenji.55916570.webp": "/persona-social-links/static/media/kenji.55916570.webp",
+    "static/media/maiko.288bf185.webp": "/persona-social-links/static/media/maiko.288bf185.webp",
+    "static/media/mamoru.6230de23.webp": "/persona-social-links/static/media/mamoru.6230de23.webp",
+    "static/media/maya.97e7d7e0.webp": "/persona-social-links/static/media/maya.97e7d7e0.webp",
+    "static/media/mitsuru.633bdd37.webp": "/persona-social-links/static/media/mitsuru.633bdd37.webp",
+    "static/media/mutatsu.0746db3d.webp": "/persona-social-links/static/media/mutatsu.0746db3d.webp",
+    "static/media/nozomi.5ea59f7a.webp": "/persona-social-links/static/media/nozomi.5ea59f7a.webp",
+    "static/media/pharos.d5c99a2a.webp": "/persona-social-links/static/media/pharos.d5c99a2a.webp",
+    "static/media/sees.135909c3.webp": "/persona-social-links/static/media/sees.135909c3.webp",
+    "static/media/tanaka.6148244e.webp": "/persona-social-links/static/media/tanaka.6148244e.webp",
+    "static/media/yukari.94e1c933.webp": "/persona-social-links/static/media/yukari.94e1c933.webp",
+    "static/media/yuko.1e722858.webp": "/persona-social-links/static/media/yuko.1e722858.webp"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9025566a.js",
+    "static/js/2.59f2fe99.chunk.js",
+    "static/css/main.4d648769.chunk.css",
+    "static/js/main.ae69e7a8.chunk.js"
+  ]
+}
