@@ -7,7 +7,7 @@ function App() {
   return (
     <Router>
       <Switch>
-        <Route path={`/:game/:arcana`}>
+        <Route path={"/:game/:arcana"}>
           <SocialLinkRoute />
         </Route>
 
