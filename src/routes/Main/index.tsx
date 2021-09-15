@@ -1,6 +1,7 @@
 import React from "react";
 import Card from "../../components/Card";
 import p3data from "../../data/p3";
+import { Games } from "../../enums/games";
 import { Background } from "./styles";
 
 const Main: React.FC = () => {
@@ -14,6 +15,7 @@ const Main: React.FC = () => {
           name={link.name}
           arcana={link.arcana}
           key={`${link.arcana}-${link.name}`}
+          game={Games.p3}
         />
       ))}
     </Background>

@@ -35,6 +35,7 @@ const GameRoute: React.FC = () => {
           imagePath={link.image}
           name={link.name}
           arcana={link.arcana}
+          game={params.game}
           key={`${link.arcana}-${link.name}`}
         />
       ))}

@@ -25,17 +25,11 @@ const SocialLinkRoute: React.FC = () => {
   const currentLink = data.find((d) => d.arcana === currentArcana?.value);
   const redirect = !gameData || !currentArcana || !currentLink;
 
-  const teste = tryGetArcanaKeyByValue("Hanged Man");
-
-  console.log(teste);
-
   useEffect(() => {
     if (redirect) history.push(`/${params.game}`);
   }, [history, redirect, params.game]);
 
   if (redirect) return null;
-
-  console.log(currentLink);
 
   const levels = currentLink.link_levels;
 
