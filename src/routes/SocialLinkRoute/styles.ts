@@ -42,3 +42,15 @@ export const TitleWrapper = styled.div`
   justify-content: space-evenly;
   margin: 1rem 0;
 `;
+
+export const ImageWrapper = styled.div`
+  display: flex;
+
+  @media (max-width: 480px) {
+    margin-bottom: 1rem;
+  }
+`;
+
+export const RankWrapper = styled.div`
+  margin-left: 1rem;
+`;

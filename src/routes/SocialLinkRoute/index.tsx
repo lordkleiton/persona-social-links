@@ -2,8 +2,16 @@ import React, { useEffect } from "react";
 import { useHistory, useRouteMatch } from "react-router-dom";
 import { arcanasArray } from "../../utils/arcanas";
 import p3data from "../../data/p3";
-import { BaseCard, Image, InnerCard, TitleWrapper } from "./styles";
+import {
+  BaseCard,
+  Image,
+  InnerCard,
+  TitleWrapper,
+  ImageWrapper,
+  RankWrapper,
+} from "./styles";
 import { Games } from "../../enums/games";
+import LinkRank from "../../components/LinkRank";
 
 interface PathProps {
   arcana: string;
@@ -42,43 +50,24 @@ const SocialLinkRoute: React.FC = () => {
         </TitleWrapper>
 
         <InnerCard>
-          <div>
+          <ImageWrapper>
             <Image src={currentLink.image} />
-          </div>
+          </ImageWrapper>
 
           <div>
-            <div>
-              {!!levels.first.length &&
-                levels.first.map((level) => <p key={Math.random()}>{level}</p>)}
-              {!!levels.second.length &&
-                levels.second.map((level) => (
-                  <p key={Math.random()}>{level}</p>
-                ))}
-              {!!levels.third.length &&
-                levels.third.map((level) => <p key={Math.random()}>{level}</p>)}
-              {!!levels.fourth.length &&
-                levels.fourth.map((level) => (
-                  <p key={Math.random()}>{level}</p>
-                ))}
-              {!!levels.fifth.length &&
-                levels.fifth.map((level) => <p key={Math.random()}>{level}</p>)}
-              {!!levels.sixth.length &&
-                levels.sixth.map((level) => <p key={Math.random()}>{level}</p>)}
-              {!!levels.seventh.length &&
-                levels.seventh.map((level) => (
-                  <p key={Math.random()}>{level}</p>
-                ))}
-              {!!levels.eighth.length &&
-                levels.eighth.map((level) => (
-                  <p key={Math.random()}>{level}</p>
-                ))}
-              {!!levels.ninth.length &&
-                levels.ninth.map((level) => <p key={Math.random()}>{level}</p>)}
-              {!!levels.tenth.length &&
-                levels.tenth.map((level) => <p key={Math.random()}>{level}</p>)}
-            </div>
-            <p>{currentLink.link_levels.toString()}</p>
-            <p>{currentLink.unlock_conditions.toString()}</p>
+            <RankWrapper>
+              <LinkRank title="Rank 1" content={levels.first} />
+              <LinkRank title="Rank 2" content={levels.second} />
+              <LinkRank title="Rank 3" content={levels.third} />
+              <LinkRank title="Rank 4" content={levels.fourth} />
+              <LinkRank title="Rank 5" content={levels.fifth} />
+              <LinkRank title="Rank 6" content={levels.sixth} />
+              <LinkRank title="Rank 7" content={levels.seventh} />
+              <LinkRank title="Rank 8" content={levels.eighth} />
+              <LinkRank title="Rank 9" content={levels.ninth} />
+              <LinkRank title="Rank 10" content={levels.tenth} />
+            </RankWrapper>
+
             <p>{currentLink.unlock_conditions.toString()}</p>
           </div>
         </InnerCard>
