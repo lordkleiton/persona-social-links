@@ -5,21 +5,25 @@ import SocialLinkRoute from "./routes/SocialLinkRoute";
 
 function App() {
   return (
-    <Router>
-      <Switch>
-        <Route path={"/:game/:arcana"}>
-          <SocialLinkRoute />
-        </Route>
+    <>
+      <Router>
+        <Switch>
+          <Route path={"/:game/:arcana"}>
+            <SocialLinkRoute />
+          </Route>
 
-        <Route path="/:game">
-          <GameRoute />
-        </Route>
+          <Route path="/:game">
+            <GameRoute />
+          </Route>
 
-        <Route path="/">
-          <Main />
-        </Route>
-      </Switch>
-    </Router>
+          <Route path="/">
+            <Main />
+          </Route>
+        </Switch>
+      </Router>
+
+      <a href="https://github.com/lordkleiton/persona-social-links">Github</a>
+    </>
   );
 }
 
