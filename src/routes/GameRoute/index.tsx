@@ -26,7 +26,7 @@ const GameRoute: React.FC = () => {
 
   useEffect(() => {
     if (redirect) history.push("/");
-  }, [history, hasMatch]);
+  }, [history, redirect]);
 
   if (redirect) return null;
 
