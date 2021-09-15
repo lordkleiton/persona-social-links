@@ -37,10 +37,34 @@ const SocialLinkRoute: React.FC = () => {
 
   console.log(currentLink);
 
+  const levels = currentLink.link_levels;
+
   return (
     <>
       <p>{currentLink.arcana.toString()}</p>
       <p>{currentLink.image.toString()}</p>
+      <div>
+        {!!levels.first.length &&
+          levels.first.map((level) => <p key={Math.random()}>{level}</p>)}
+        {!!levels.second.length &&
+          levels.second.map((level) => <p key={Math.random()}>{level}</p>)}
+        {!!levels.third.length &&
+          levels.third.map((level) => <p key={Math.random()}>{level}</p>)}
+        {!!levels.fourth.length &&
+          levels.fourth.map((level) => <p key={Math.random()}>{level}</p>)}
+        {!!levels.fifth.length &&
+          levels.fifth.map((level) => <p key={Math.random()}>{level}</p>)}
+        {!!levels.sixth.length &&
+          levels.sixth.map((level) => <p key={Math.random()}>{level}</p>)}
+        {!!levels.seventh.length &&
+          levels.seventh.map((level) => <p key={Math.random()}>{level}</p>)}
+        {!!levels.eighth.length &&
+          levels.eighth.map((level) => <p key={Math.random()}>{level}</p>)}
+        {!!levels.ninth.length &&
+          levels.ninth.map((level) => <p key={Math.random()}>{level}</p>)}
+        {!!levels.tenth.length &&
+          levels.tenth.map((level) => <p key={Math.random()}>{level}</p>)}
+      </div>
       <p>{currentLink.link_levels.toString()}</p>
       <p>{currentLink.name.toString()}</p>
       <p>{currentLink.unlock_conditions.toString()}</p>
