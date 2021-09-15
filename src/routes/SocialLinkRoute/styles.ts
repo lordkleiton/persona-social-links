@@ -30,6 +30,7 @@ export const Image = styled.img`
   object-fit: scale-down;
   margin: auto;
   max-height: 25rem;
+  max-width: 25rem;
 
   @media (max-width: 480px) {
     max-height: 30vh;
