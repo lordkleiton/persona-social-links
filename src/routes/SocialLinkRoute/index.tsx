@@ -3,20 +3,15 @@ import { useHistory, useRouteMatch } from "react-router-dom";
 import { arcanasArray } from "../../utils/arcanas";
 import p3data from "../../data/p3";
 import { BaseCard, Image, InnerCard, TitleWrapper } from "./styles";
+import { Games } from "../../enums/games";
 
 interface PathProps {
   arcana: string;
   game: string;
 }
 
-const availableGames = {
-  p3: "p3",
-  p4: "p4",
-  p5: "p5",
-};
-
 const dataMap = {
-  [availableGames.p3]: p3data,
+  [Games.p3.valueOf()]: p3data,
 };
 
 const SocialLinkRoute: React.FC = () => {

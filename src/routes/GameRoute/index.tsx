@@ -3,21 +3,21 @@ import { useHistory, useRouteMatch } from "react-router";
 import p3data from "../../data/p3";
 import { Background } from "./styles";
 import Card from "../../components/Card";
+import { Games } from "../../enums/games";
 
-const availableGames = {
-  p3: "/p3",
-  p4: "/p4",
-  p5: "/p5",
-};
+interface PathProps {
+  game: string;
+}
 
 const dataMap = {
-  [availableGames.p3]: p3data,
+  [Games.p3.valueOf()]: p3data,
 };
 
 const GameRoute: React.FC = () => {
   const history = useHistory();
   const match = useRouteMatch();
-  const gameData = dataMap[match.url];
+  const params = match.params as PathProps;
+  const gameData = dataMap[params.game];
   const redirect = !match.isExact || !gameData;
 
   useEffect(() => {
