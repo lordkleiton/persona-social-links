@@ -12,8 +12,8 @@ interface CardProps {
 
 const Card: React.FC<CardProps> = (props) => {
   return (
-    <Link to={`/${props.game}/${tryGetArcanaKeyByValue(props.arcana)}`}>
-      <Background>
+    <Background>
+      <Link to={`/${props.game}/${tryGetArcanaKeyByValue(props.arcana)}`}>
         <ImageArea>
           <Image src={props.imagePath} />
         </ImageArea>
@@ -23,8 +23,8 @@ const Card: React.FC<CardProps> = (props) => {
 
           <Text>{props.arcana}</Text>
         </InfoArea>
-      </Background>
-    </Link>
+      </Link>
+    </Background>
   );
 };
 
