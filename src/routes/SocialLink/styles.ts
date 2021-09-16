@@ -40,7 +40,9 @@ export const Image = styled.img`
 export const TitleWrapper = styled.div`
   display: flex;
   justify-content: space-evenly;
-  margin: 1rem 0;
+  padding: 1rem 0;
+  border-bottom: 1px solid black;
+  margin-bottom: 0.5rem;
 `;
 
 export const ImageWrapper = styled.div`
@@ -53,4 +55,10 @@ export const ImageWrapper = styled.div`
 
 export const RankWrapper = styled.div`
   margin-left: 1rem;
+`;
+
+export const Spacer = styled.div`
+  width: 1px;
+  background: black;
+  display: block;
 `;

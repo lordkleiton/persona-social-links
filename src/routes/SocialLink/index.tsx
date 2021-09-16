@@ -9,6 +9,7 @@ import {
   TitleWrapper,
   ImageWrapper,
   RankWrapper,
+  Spacer,
 } from "./styles";
 import { Games } from "../../enums/games";
 import LinkRank from "../../components/LinkRank";
@@ -22,7 +23,7 @@ const dataMap = {
   [Games.p3.valueOf()]: p3data,
 };
 
-const SocialLinkRoute: React.FC = () => {
+const SocialLink: React.FC = () => {
   const history = useHistory();
   const match = useRouteMatch();
   const params = match.params as PathProps;
@@ -46,6 +47,9 @@ const SocialLinkRoute: React.FC = () => {
       <BaseCard>
         <TitleWrapper>
           <p>{currentLink.name.toString()}</p>
+
+          <Spacer />
+
           <p>{currentLink.arcana.toString()}</p>
         </TitleWrapper>
 
@@ -76,4 +80,4 @@ const SocialLinkRoute: React.FC = () => {
   );
 };
 
-export default SocialLinkRoute;
+export default SocialLink;
