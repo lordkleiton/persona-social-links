@@ -43,40 +43,38 @@ const SocialLink: React.FC = () => {
   const levels = currentLink.link_levels;
 
   return (
-    <>
-      <BaseCard>
-        <TitleWrapper>
-          <p>{currentLink.name.toString()}</p>
+    <BaseCard>
+      <TitleWrapper>
+        <p>{currentLink.name.toString()}</p>
 
-          <Spacer />
+        <Spacer />
 
-          <p>{currentLink.arcana.toString()}</p>
-        </TitleWrapper>
+        <p>{currentLink.arcana.toString()}</p>
+      </TitleWrapper>
 
-        <InnerCard>
-          <ImageWrapper>
-            <Image src={currentLink.image} />
-          </ImageWrapper>
+      <InnerCard>
+        <ImageWrapper>
+          <Image src={currentLink.image} />
+        </ImageWrapper>
 
-          <div>
-            <RankWrapper>
-              <LinkRank title="Rank 1" content={levels.first} />
-              <LinkRank title="Rank 2" content={levels.second} />
-              <LinkRank title="Rank 3" content={levels.third} />
-              <LinkRank title="Rank 4" content={levels.fourth} />
-              <LinkRank title="Rank 5" content={levels.fifth} />
-              <LinkRank title="Rank 6" content={levels.sixth} />
-              <LinkRank title="Rank 7" content={levels.seventh} />
-              <LinkRank title="Rank 8" content={levels.eighth} />
-              <LinkRank title="Rank 9" content={levels.ninth} />
-              <LinkRank title="Rank 10" content={levels.tenth} />
-            </RankWrapper>
+        <div>
+          <RankWrapper>
+            <LinkRank title="Rank 1" content={levels.first} />
+            <LinkRank title="Rank 2" content={levels.second} />
+            <LinkRank title="Rank 3" content={levels.third} />
+            <LinkRank title="Rank 4" content={levels.fourth} />
+            <LinkRank title="Rank 5" content={levels.fifth} />
+            <LinkRank title="Rank 6" content={levels.sixth} />
+            <LinkRank title="Rank 7" content={levels.seventh} />
+            <LinkRank title="Rank 8" content={levels.eighth} />
+            <LinkRank title="Rank 9" content={levels.ninth} />
+            <LinkRank title="Rank 10" content={levels.tenth} />
+          </RankWrapper>
 
-            <p>{currentLink.unlock_conditions.toString()}</p>
-          </div>
-        </InnerCard>
-      </BaseCard>
-    </>
+          <p>{currentLink.unlock_conditions.toString()}</p>
+        </div>
+      </InnerCard>
+    </BaseCard>
   );
 };
 
