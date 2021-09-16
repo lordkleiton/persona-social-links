@@ -18,6 +18,8 @@ Finally, I wanted to practice Typescript
 
 https://persona-social-links.herokuapp.com/
 
+https://persona-social-links.netlify.app/p3/aeon
+
 ## It looks ugly...
 
 P-please don't be so harsh...
