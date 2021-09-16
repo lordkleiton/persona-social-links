@@ -50,6 +50,5 @@
     "@types/react-router-dom": "^5.1.9",
     "@types/styled-components": "^5.1.14",
     "gh-pages": "^3.2.3"
-  },
-  "homepage": "https://lordkleiton.github.io/persona-social-links/"
+  }
 }
