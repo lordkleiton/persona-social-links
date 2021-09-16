@@ -16,9 +16,9 @@ Finally, I wanted to practice Typescript
 
 ## L-Links...?
 
-https://persona-social-links.herokuapp.com/
+https://persona-social-links.herokuapp.com
 
-https://persona-social-links.netlify.app/p3/aeon
+https://persona-social-links.netlify.app
 
 ## It looks ugly...
 
