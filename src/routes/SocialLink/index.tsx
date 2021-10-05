@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { useHistory, useRouteMatch } from "react-router-dom";
 import { arcanasArray } from "../../utils/arcanas";
 import p3data from "../../data/p3";
+import p4data from "../../data/p4";
 import {
   BaseCard,
   Image,
@@ -21,6 +22,7 @@ interface PathProps {
 
 const dataMap = {
   [Games.p3.valueOf()]: p3data,
+  [Games.p4.valueOf()]: p4data,
 };
 
 const SocialLink: React.FC = () => {
